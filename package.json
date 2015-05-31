@@ -1,0 +1,17 @@
+{
+  "name": "browser_process",
+  "version": "0.0.0",
+  "description": "Cross platform browser process creation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Casper Beyer <caspervonb@qup.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "which": "^1.1.1"
+  }
+}
