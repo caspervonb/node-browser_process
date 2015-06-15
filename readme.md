@@ -1,5 +1,4 @@
-# browser_process -- Cross platform browser process creation.
-
+# node-browser_process
 ![browsers](https://cloud.githubusercontent.com/assets/157787/7900340/4ee6bb84-0783-11e5-9721-3139492ceba5.png)
 
 ## INSTALLATION
@@ -13,23 +12,18 @@ $ npm install browser_process
 ```js
 var browser = require('browser_process');
 
-// ...
-
 var args = browser.options('chrome', {
   url: 'about:blank',
-  profile: 'chrome_profile',
-  window: true,
-  debug: 4000,
 });
 
 browser.spawn('chrome', args, function(error, exe) {
-  // ...
+  console.log('chrome open');
 });
 ```
 
 ## DOCUMENTATION
 
-See the [introduction](doc/readme.md) and [reference manual](doc/api/readme.md)
+[See the manual](doc/api/readme.md)
 
 ## SUPPORT
 
@@ -42,8 +36,8 @@ See the [introduction](doc/readme.md) and [reference manual](doc/api/readme.md)
 
 ## RELEASES
 
-All notable changes are recorded in the [changelog](changelog.md)
+[See the changelog](changelog.md).
 
 ## LICENSE
 
-Copyright (c) 2015 Casper Beyer under the [MIT License](license.md)
+The project is licensed under the [MIT License](license.md).
