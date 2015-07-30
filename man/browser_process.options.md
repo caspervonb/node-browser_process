@@ -3,7 +3,7 @@
 ## SYNOPSIS
 
 ```js
-function options(command, options);
+function options(type, options);
 ```
 
 ## PARAMETERS
