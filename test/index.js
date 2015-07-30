@@ -1,8 +1,8 @@
-const browser = require('..');
-const path = require('path');
-const test = require('tape');
+var browser = require('..');
+var path = require('path');
+var test = require('tape');
 
-const commands = [
+var commands = [
   'chrome',
   'chromium',
   'firefox',
