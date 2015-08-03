@@ -1,0 +1,11 @@
+os: Unstable
+
+install:
+  - ps: Install-Product node 0.12
+  - choco install chromium
+  - npm install
+
+test_script:
+  - npm test
+
+build: off
