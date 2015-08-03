@@ -9,6 +9,7 @@
   "author": "Casper Beyer <caspervonb@qup.io>",
   "license": "MIT",
   "devDependencies": {
+    "electron-prebuilt": "^0.30.2",
     "tape": "^4.0.0"
   },
   "dependencies": {
