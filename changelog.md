@@ -3,6 +3,14 @@
 All notable changes to this project will be documented here.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.2 - 2015-08-04
+### ADDED
+- Added electron as a valid browser for `find` and `type`.
+
+## FIXED
+- Fixed an issue where calling `find` with `chromium` on Windows could result
+in a chrome executable.
+
 ## 1.0.1 - 2015-06-16
 ### FIXED
 - Fixed executable search paths on Windows.
