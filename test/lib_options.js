@@ -30,19 +30,23 @@ Object.keys(names).forEach(function (name) {
   var type = names[name];
 
   test(name + ' options', function (assert) {
-    assert.plan(2);
+    assert.plan(3);
+
+    var options = {
+      private: true,
+      window: true,
+      profile: 'profile_dir',
+      debug: 4000,
+      url: 'about:blank',
+    };
+
+    var args = browser.options(name, options);
+    assert.deepEqual(args, types[type]);
 
     browser.find(name, function (error, command) {
       assert.error(error);
 
-      var args = browser.options(command, {
-        private: true,
-        window: true,
-        profile: 'profile_dir',
-        debug: 4000,
-        url: 'about:blank',
-      });
-
+      var args = browser.options(command, options);
       assert.deepEqual(args, types[type]);
     });
   });
