@@ -1,6 +1,6 @@
 {
   "name": "browser_process",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cross platform browser process creation",
   "main": "lib/index.js",
   "scripts": {
