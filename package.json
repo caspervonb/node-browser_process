@@ -2,7 +2,7 @@
   "name": "browser_process",
   "version": "1.0.4",
   "description": "Cross platform browser process creation",
-  "main": "lib/index.js",
+  "main": "lib/browser_process.js",
   "scripts": {
     "test": "tape test/*.js"
   },
