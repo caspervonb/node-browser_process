@@ -3,7 +3,7 @@
 ## SYNOPSIS
 
 ```js
-function spawn(command, [args], [options], callback);
+spawn(command, [args], [options], callback)
 ```
 
 ## PARAMETERS

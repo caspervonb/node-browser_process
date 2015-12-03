@@ -3,7 +3,7 @@
 ## SYNOPSIS
 
 ```js
-function find(command, callback);
+find(command, callback)
 ```
 
 ## PARAMETERS

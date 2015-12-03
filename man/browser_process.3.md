@@ -2,11 +2,12 @@
 
 ## SYNOPSIS
 
+## METHODS
 ```js
-function type(command);
-function find(command, callback)
-function options(command, options);
-function spawn(command, [args], [options], callback);
+type(command)
+find(command, callback)
+options(command, options)
+spawn(command, [args], [options], callback)
 ```
 
 # DESCRIPTION

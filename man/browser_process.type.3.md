@@ -3,7 +3,7 @@
 ## SYNOPSIS
 
 ```js
-function type(command);
+type(command)
 ```
 
 ## PARAMETERS

@@ -3,7 +3,7 @@
 ## SYNOPSIS
 
 ```js
-function options(type, options);
+options(type, values)
 ```
 
 ## PARAMETERS
@@ -11,7 +11,7 @@ function options(type, options);
 `command` *String*
 :   The command or browser type to use.
 
-`options` *Object*
+`values` *Object*
 :   `debug` *Integer*
     Start with the debugger listening on the given port
 :   `private` *Boolean*
