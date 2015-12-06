@@ -33,6 +33,6 @@ Generates an array command line options for the browser defined by given `comman
 
 ## SEE ALSO
 
-[browser_process.find](browser_process.find.3.md),
-[browser_process.type](browser_process.type.3.md),
-[browser_process.spawn](browser_process.spawn.3.md)
+- [browser_process.find](browser_process.find.3.md)
+- [browser_process.spawn](browser_process.spawn.3.md)
+- [browser_process.type](browser_process.type.3.md)
