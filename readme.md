@@ -8,20 +8,24 @@ launching of chrome, chromium, electron and firefox for node.js.
 ## INSTALLATION
 
 ```sh
-$ npm install browser_process
+$ npm install [--save] browser_process
 ```
 
 ## USAGE
 
 ```js
-var browser = require('browser_process');
+const browser = require('browser_process');
 
-var args = browser.options('chrome', {
+const args = browser.options('chrome', {
   url: 'about:blank',
 });
 
-browser.spawn('chrome', args, function(error, exe) {
-  console.log('chrome open');
+browser.spawn('chrome', args, (error, ps) => {
+  if (error) {
+    return console.error('Unable to launch chrome (%s)', error);
+  }
+
+  console.log('Launched chrome (%s)', ps.spawnfile);
 });
 ```
 
