@@ -23,7 +23,7 @@ browser.spawn('chrome', args, function(error, exe) {
 
 ## DOCUMENTATION
 
-[See the manual](doc/api/readme.md)
+[See the documentation](doc/readme.md)
 
 ## SUPPORT
 
