@@ -31,7 +31,7 @@ absolute browser executable path or the name of a browser (`chrome`,
 
 ## RETURN VALUE
 
-`Array`
+*Array*
 
 ## SEE ALSO
 

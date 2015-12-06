@@ -17,7 +17,7 @@ of a browser (`chrome`, `chromium`, `electron` or `firefox`).
 
 ## RETURN VALUE
 
-`String`
+*String*
 
 ## SEE ALSO
 
