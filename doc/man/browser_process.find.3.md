@@ -1,28 +1,25 @@
 # browser_process.find -- search for the executable of a browser
-
 ## SYNOPSIS
 
 ```js
-find(command, callback)
+find(name, callback)
 ```
 
 ## PARAMETERS
 
-`command` *String*
-:   The command or browser type to use.
+`name` *String*
+:   The name to use.
 
-`callback` *function(error, string)*
-:   The callback function to invoke on failure or success.
+`callback` *Function*
+:   The callback to use.
 
 ## DESCRIPTION
 
-Searches `process.env['PATH']` and default vendor directories for the given `command`, if `command` is a browser type it will be substituted for the platform specific executable name of that browser type.
+Searches default installation directories for an executable of a browser with
+the given `name` which may be `chrome`, `chromium`, `electron` or `firefox`.
 
-When an executable is found, callback will be invoked with the command as the second parameter, if an error occurs callback will be invoked with the error as the first parameter.
-
-## RETURN VALUE
-
-`undefined`
+The callback is passed two arguments `(error, command)`, where `command` is
+the absolute real resolved path to the browser executable.
 
 ## SEE ALSO
 
