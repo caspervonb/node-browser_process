@@ -43,6 +43,27 @@ Both `args` and `options` are passed as-is to `child_process.spawn`.
 
 The callback is passed two arguments `(error, browser)`, where `browser` is the resulting child process as returned `child_process.spawn`
 
+
+## EXAMPLES
+
+Launch chrome
+
+```js
+const browser = require('browser_process');
+
+let args = browser.options('chromium', {
+  debug: 9222
+});
+
+browser.spawn('chrome', (error, ps) => {
+  if (error) {
+    return console.error('Unable to spawn chrome (%s)', error);
+  }
+
+  console.log('Chrome launched', ps.spawnfile);
+});
+```
+
 ## SEE ALSO
 
 - [browser_process.find](browser_process.find.3.md)

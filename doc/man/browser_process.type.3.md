@@ -19,6 +19,28 @@ of a browser (`chrome`, `chromium`, `electron` or `firefox`).
 
 *String*
 
+## EXAMPLE
+
+Get the type of a browser name
+
+```js
+const browser = require('browser_process');
+const assert = require('assert');
+
+let type = browser.type('chromium');
+assert.equal(type, 'chrome');
+```
+
+Get the type of a browser executable path
+
+```js
+const browser = require('browser_process');
+const assert = require('assert');
+
+let type = browser.type('/opt/chromium/chromium-browser');
+assert.equal(type, 'chrome');
+```
+
 ## SEE ALSO
 
 - [browser_process.find](browser_process.find.3.md)

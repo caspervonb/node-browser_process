@@ -33,6 +33,26 @@ absolute browser executable path or the name of a browser (`chrome`,
 
 *Array*
 
+## EXAMPLES
+
+Launch chromium with remote debugging enabled
+
+```js
+const browser = require('browser_process');
+
+let args = browser.options('chromium', {
+  debug: 9222
+});
+
+browser.spawn('chromium', (error, ps) => {
+  if (error) {
+    return console.error('Unable to spawn chromium (%s)', error);
+  }
+
+  console.log('Chromium launched', ps.spawnfile);
+});
+```
+
 ## SEE ALSO
 
 - [browser_process.find](browser_process.find.3.md)
