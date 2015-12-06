@@ -1,7 +1,9 @@
-var browser = require('..');
-var test = require('tape');
+'use strict';
 
-var types = {
+const browser = require('..');
+const test = require('tape');
+
+const types = {
   'chrome': [
     '--incognito',
     '--new-window',
@@ -26,13 +28,13 @@ var names = {
   'firefox': 'firefox',
 };
 
-Object.keys(names).forEach(function (name) {
-  var type = names[name];
+Object.keys(names).forEach(name => {
+  let type = names[name];
 
-  test(name + ' options', function (assert) {
+  test(name + ' options', assert => {
     assert.plan(3);
 
-    var options = {
+    let options = {
       private: true,
       window: true,
       profile: 'profile_dir',
@@ -40,13 +42,13 @@ Object.keys(names).forEach(function (name) {
       url: 'about:blank',
     };
 
-    var args = browser.options(name, options);
+    let args = browser.options(name, options);
     assert.deepEqual(args, types[type]);
 
-    browser.find(name, function (error, command) {
+    browser.find(name, (error, command) => {
       assert.error(error);
 
-      var args = browser.options(command, options);
+      let args = browser.options(command, options);
       assert.deepEqual(args, types[type]);
     });
   });

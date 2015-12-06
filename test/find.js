@@ -1,8 +1,10 @@
-var browser = require('..');
-var test = require('tape');
-var path = require('path');
+'use strict';
 
-var names = [
+const browser = require('..');
+const test = require('tape');
+const path = require('path');
+
+const names = [
   'chrome',
   'chromium',
   'electron',

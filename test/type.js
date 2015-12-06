@@ -1,18 +1,20 @@
-var browser = require('..');
-var test = require('tape');
+'use strict';
 
-var names = {
+const browser = require('..');
+const test = require('tape');
+
+const names = {
   'chrome': 'chrome',
   'chromium': 'chrome',
   'electron': 'chrome',
   'firefox': 'firefox',
 };
 
-Object.keys(names).forEach(function (name) {
-  test('type of ' + name, function (assert) {
+Object.keys(names).forEach(name => {
+  test('type of ' + name, assert => {
     assert.plan(2);
 
-    browser.find(name, function (error, command) {
+    browser.find(name, (error, command) => {
       assert.error(error);
       assert.equal(browser.type(command), names[name]);
     });
