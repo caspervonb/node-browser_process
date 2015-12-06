@@ -1,5 +1,4 @@
-# browser_process.options -- generate command line options for a browser
-
+# browser_process.options -- create command line arguments for a browser
 ## SYNOPSIS
 
 ```js

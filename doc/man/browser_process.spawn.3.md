@@ -1,5 +1,4 @@
-# browser_process.spawn -- spawns a new browser process
-
+# browser_process.spawn -- launch a new browser process
 ## SYNOPSIS
 
 ```js

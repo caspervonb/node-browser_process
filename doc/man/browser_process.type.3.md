@@ -1,5 +1,4 @@
-# browser_process.type
-
+# browser_process.type -- get the type of a browser identifier
 ## SYNOPSIS
 
 ```js
