@@ -1,4 +1,4 @@
-# browser_process -- cross platform browser process creation
+# browser_process -- cross platform browser detection and process creation
 ## METHODS
 [`browser_process.find`](browser_process.find.3.md)
 :   Search for a browser executable.
@@ -14,8 +14,8 @@
 
 # DESCRIPTION
 
-The `browser_process` module provides uniform, cross platform browser process
-spawning and command line option creation for `chrome`, `chromium` and
-`firefox`.
+The `browser_process` module provides uniform, cross platform browser
+detection, command line argument handling and process launching for `chrome`,
+`chromium`, `electron` and `firefox`.
 
 Use `require('browser_process')` to access this module.
