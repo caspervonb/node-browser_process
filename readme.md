@@ -1,5 +1,9 @@
 # node-browser_process
-![browsers](https://cloud.githubusercontent.com/assets/157787/7900340/4ee6bb84-0783-11e5-9721-3139492ceba5.png)
+
+![Image](https://cloud.githubusercontent.com/assets/157787/7900340/4ee6bb84-0783-11e5-9721-3139492ceba5.png)
+
+Cross platform and uniform browser detection, command line arguments handling and process
+launching of chrome, chromium, electron and firefox for node.js.
 
 ## INSTALLATION
 
