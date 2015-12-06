@@ -10,10 +10,24 @@ spawn(identifier [, args] [, options], callback)
 `identifier` *String*
 :   The identifier to use.
 
-`options` *Object*
+`args` *Array*
+:   The command line arguments to use.
 
-`callback` *function(error, string)*
-:   The callback function to invoke on failure or success.
+`options` *Object*
+:   `cwd` *String*
+:       Current working directory of the browser process
+:   `env` *Object*
+:       Environment variables in key-value pairs
+:   `stdio` *Array*|*String*
+:       Standard I/O configuration
+:   `detatched` *Boolean*
+:       Prepare process to run independently of its parent process.
+:   `uid` *Number*
+:       Set the user identify of the process.
+:   `gid` *Number*
+:       Set the group identify of the process.
+`callback` *Function*
+:   The callback to use. -->
 
 ## DESCRIPTION
 
