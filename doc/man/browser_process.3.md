@@ -20,7 +20,7 @@ Use `require('browser_process')` to access this module.
 
 ## SEE ALSO
 
-[browser_process.find](browser_process.find.md),
-[browser_process.type](browser_process.type.md),
-[browser_process.options](browser_process.options.md),
-[browser_process.spawn](browser_process.spawn.md)
+[browser_process.find](browser_process.find.3.md),
+[browser_process.type](browser_process.type.3.md),
+[browser_process.options](browser_process.options.3.md),
+[browser_process.spawn](browser_process.spawn.3.md)

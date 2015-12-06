@@ -26,6 +26,6 @@ When an executable is found, callback will be invoked with the command as the se
 
 ## SEE ALSO
 
-[browser_process.type](browser_process.type.md),
-[browser_process.options](browser_process.options.md),
-[browser_process.spawn](browser_process.spawn.md)
+[browser_process.type](browser_process.type.3.md),
+[browser_process.options](browser_process.options.3.md),
+[browser_process.spawn](browser_process.spawn.3.md)
