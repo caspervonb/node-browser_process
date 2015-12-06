@@ -3,13 +3,13 @@
 ## SYNOPSIS
 
 ```js
-options(type, values)
+options(identifier, values)
 ```
 
 ## PARAMETERS
 
-`command` *String*
-:   The command or browser type to use.
+`identifier` *String*
+:   The browser identifier to use.
 
 `values` *Object*
 :   `debug` *Integer*
@@ -25,7 +25,10 @@ options(type, values)
 
 ## DESCRIPTION
 
-Generates an array command line options for the browser defined by given `command` based on the given `options`.
+Returns the given `values` an *Array* of command line arguments for the
+browser defined by the given `identifier`. The identifier may be either an
+absolute browser executable path or the name of a browser (`chrome`,
+`chromium`, `electron` or `firefox`).
 
 ## RETURN VALUE
 

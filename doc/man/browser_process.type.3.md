@@ -3,18 +3,18 @@
 ## SYNOPSIS
 
 ```js
-type(command)
+type(identifier)
 ```
 
 ## PARAMETERS
-`command` *String*
-:   The command to find the browser type of.
+`identifier` *String*
+:   The identifier to use
 
 ## DESCRIPTION
 
-Returns the type of browser for the given `command`.
-
-Possible values are `chrome`, `chromium` and `firefox`.
+Returns the browser type the given browser `identifier` represents, where the
+`identifier` may either be an absolute path to a browser executable, or the name
+of a browser (`chrome`, `chromium`, `electron` or `firefox`).
 
 ## RETURN VALUE
 
