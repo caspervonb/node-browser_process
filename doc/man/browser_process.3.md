@@ -1,5 +1,8 @@
 # browser_process -- cross platform browser detection and process creation
 ## METHODS
+[`browser_process.detect`](browser_process.detect.3.md)
+:   Detect available browser executables.
+
 [`browser_process.find`](browser_process.find.3.md)
 :   Search for a browser executable.
 
