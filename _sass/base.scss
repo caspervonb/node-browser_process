@@ -1,0 +1,59 @@
+@import 'util';
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  h1 {
+    text-align: center;
+
+    @include large {
+      font-size: 3.25rem;
+    }
+
+    @include medium {
+      font-size: 2.25rem;
+    }
+
+    @include small {
+      font-size: 1.75rem;
+    }
+  }
+
+  h1 + p,
+  h1 + p + p {
+    margin-bottom: 2rem;
+    font-weight: normal;
+    text-align: center;
+
+    @include large {
+      font-size: 1.25rem;
+    }
+
+    @include medium {
+      font-size: 1.15rem;
+    }
+
+    @include small {
+      font-size: 1rem;
+    }
+  }
+
+  @include large {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+repository: caspervonb/node-browser_process
+
+markdown: kramdown
+kramdown:
+  hard_wrap: false
+  input: GFM
+  toc_levels: "2,3"
+
+gems:
+  - jekyll-github-metadata
+  - jekyll-sitemap
+  - jekyll-mentions
+
+exclude:
+  - makefile
