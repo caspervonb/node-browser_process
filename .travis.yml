@@ -10,3 +10,8 @@ before_install:
   - sudo apt-get install google-chrome-stable
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
+
+test:
+  - node --version
+  - npm --version
+  - npm test
