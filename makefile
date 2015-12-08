@@ -41,6 +41,7 @@ doc/%.md: master/doc/%.md | doc
 readme.md: master/readme.md
 	echo '---' > $@
 	echo 'layout: default' >> $@
+	echo 'permalink: /' >> $@
 	echo '---' >> $@
 	sed 's/.md/.html/' $< >> $@
 
