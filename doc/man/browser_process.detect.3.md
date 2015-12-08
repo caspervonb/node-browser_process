@@ -14,7 +14,8 @@ detect(callback)
 
 Searches default installation directories for browser executables.
 
-The callback is passed a single `(commands)` argument, which is an array of absolute paths to browser executables.
+The callback is passed a single `(commands)` argument, which is an array of
+absolute paths to browser executables.
 
 ## EXAMPLES
 
