@@ -22,19 +22,20 @@ spawn(identifier [, args] [, options], callback)
 
 `options` *Object*
 :   `cwd` *String*
-:       Current working directory of the browser process
+    :   Current working directory of the browser process
 :   `env` *Object*
-:       Environment variables in key-value pairs
+    :   Environment variables in key-value pairs
 :   `stdio` *Array*|*String*
-:       Standard I/O configuration
+    :   Standard I/O configuration
 :   `detatched` *Boolean*
-:       Prepare process to run independently of its parent process.
+    :   Prepare process to run independently of its parent process.
 :   `uid` *Number*
-:       Set the user identify of the process.
+    :   Set the user identify of the process.
 :   `gid` *Number*
-:       Set the group identify of the process.
+    :   Set the group identify of the process.
+
 `callback` *Function*
-:   The callback to use. -->
+:   The callback to use.
 
 ## DESCRIPTION
 
