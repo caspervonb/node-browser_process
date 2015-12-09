@@ -4,26 +4,21 @@ const browser = require('..');
 const test = require('tape');
 const path = require('path');
 
-const names = [
-  'chrome',
-  'chromium',
-  'electron',
-  'firefox',
-];
+const name = (process.env['TEST_BROWSER'] || 'chrome');
 
-names.forEach(name => {
-  test('spawn ' + name, assert => {
-    assert.plan(2);
+test(`spawn ${name}`, assert => {
+  assert.plan(3);
 
-    browser.spawn(name, (error, ps) => {
-      assert.on('end', () => {
-        if (ps) {
-          ps.kill();
-        }
+  browser.spawn(name, (error, ps) => {
+    assert.error(error);
+    assert.ok(ps);
+
+    setTimeout(() => {
+      ps.once('close', (code) => {
+        assert.pass('close');
       });
 
-      assert.error(error);
-      assert.ok(ps);
-    });
+      ps.kill();
+    }, 1000);
   });
 });

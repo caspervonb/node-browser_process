@@ -4,20 +4,13 @@ const browser = require('..');
 const test = require('tape');
 const path = require('path');
 
-const names = [
-  'chrome',
-  'chromium',
-  'electron',
-  'firefox',
-];
+const name = (process.env['TEST_BROWSER'] || 'chrome');
 
-names.forEach(function (name) {
-  test('find ' + name, function (assert) {
-    assert.plan(2);
+test(`find ${name}`, assert => {
+  assert.plan(2);
 
-    browser.find(name, function (error, command) {
-      assert.error(error);
-      assert.ok(path.isAbsolute(command));
-    });
+  browser.find(name, (error, command) => {
+    assert.error(error);
+    assert.ok(path.isAbsolute(command));
   });
 });

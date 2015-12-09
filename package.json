@@ -4,7 +4,7 @@
   "description": "Cross platform browser process creation",
   "main": "lib/browser_process.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "make test"
   },
   "author": "Casper Beyer <caspervonb@qup.io>",
   "license": "MIT",

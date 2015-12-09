@@ -2,21 +2,23 @@
 
 const browser = require('..');
 const test = require('tape');
+const path = require('path');
 
-const names = {
+const name = (process.env['TEST_BROWSER'] || 'chrome');
+
+const type = {
   'chrome': 'chrome',
   'chromium': 'chrome',
   'electron': 'chrome',
   'firefox': 'firefox',
-};
+}[name];
 
-Object.keys(names).forEach(name => {
-  test('type of ' + name, assert => {
-    assert.plan(2);
+test(`type of ${name}`, (assert) => {
+  assert.plan(3);
 
-    browser.find(name, (error, command) => {
-      assert.error(error);
-      assert.equal(browser.type(command), names[name]);
-    });
+  assert.equal(browser.type(name), type);
+  browser.find(name, (error, command) => {
+    assert.error(error);
+    assert.equal(browser.type(command), type);
   });
 });
