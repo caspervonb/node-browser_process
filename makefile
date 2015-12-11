@@ -5,14 +5,11 @@ all: $(DOC)
 %.md:
 	mkdir -p $(@D)
 	echo --- > $@
-	echo permalink: `echo $@ | sed 's/.md$$//g; s/readme$$/\//; s/\./\//g'` >> $@
+	echo permalink: `echo $@ | sed 's/.md$$//g; s/readme$$/\//;'` >> $@
 	echo --- >> $@
 	git show master:$@ | \
 		sed -e 's/\[\(.*\)\](\([^:]*\).md)/[\1](\2)/g;' \
-				-e 's/\[\(.*\)\](\([^:]*\)readme)/[\1](\2)/g;' \
-				-e ':dot' \
-				-e 's/\[\(.*\)\](\([^:]*\)\.\(.*\))/[\1](\2\/\3)/g;' \
-				-e 'tdot' >> $@
+				-e 's/\[\(.*\)\](\([^:]*\)readme)/[\1](\2)/g;' >> $@
 
 clean:
 	rm -f $(DOC)

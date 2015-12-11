@@ -1,11 +1,7 @@
 ---
-layout: man
+permalink: doc/man/browser_process.type.3
 ---
 # browser_process.type -- get the type of a browser identifier
-
-## NAME
-**browser_process.type** -- get the type of a browser identifier
-
 ## SYNOPSIS
 
 ```js
@@ -50,6 +46,6 @@ assert.equal(type, 'chrome');
 
 ## SEE ALSO
 
-- [browser_process.find](browser_process.find.3.html)
-- [browser_process.options](browser_process.options.3.html)
-- [browser_process.spawn](browser_process.spawn.3.html)
+- [browser_process.find](browser_process.find.3)
+- [browser_process.options](browser_process.options.3)
+- [browser_process.spawn](browser_process.spawn.3)

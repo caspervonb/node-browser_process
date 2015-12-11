@@ -1,11 +1,7 @@
 ---
-layout: man
+permalink: doc/man/browser_process.options.3
 ---
 # browser_process.options -- create command line arguments for a browser
-
-## NAME
-**browser_process.options** -- create command line arguments for a browser
-
 ## SYNOPSIS
 
 ```js
@@ -62,6 +58,6 @@ browser.spawn('chromium', (error, ps) => {
 
 ## SEE ALSO
 
-- [browser_process.find](browser_process.find.3.html)
-- [browser_process.spawn](browser_process.spawn.3.html)
-- [browser_process.type](browser_process.type.3.html)
+- [browser_process.find](browser_process.find.3)
+- [browser_process.spawn](browser_process.spawn.3)
+- [browser_process.type](browser_process.type.3)

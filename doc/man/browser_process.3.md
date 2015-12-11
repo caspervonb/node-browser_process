@@ -1,27 +1,24 @@
 ---
-layout: man
+permalink: doc/man/browser_process.3
 ---
 # browser_process -- cross platform browser detection and process creation
-
-## NAME
-**browser_process** -- cross platform browser detection and process creation
-
 ## METHODS
-[`browser_process.detect`](browser_process.detect.3.html)
+[`browser_process.detect`](browser_process.detect.3)
 :   Detect available browser executables.
 
-[`browser_process.find`](browser_process.find.3.html)
+[`browser_process.find`](browser_process.find.3)
 :   Search for a browser executable.
 
-[`browser_process.options`](browser_process.find.3.html)
+[`browser_process.options`](browser_process.find.3)
 :   Generate browser command line arguments
 
-[`browser_process.spawn`](browser_process.spawn.3.html)
+[`browser_process.spawn`](browser_process.spawn.3)
 :   Launch a new browser process
 
-[`browser_process.type`](browser_process.find.3.html)
+[`browser_process.type`](browser_process.find.3)
 :   Get the type of a browser identifier
 
+# DESCRIPTION
 
 The `browser_process` module provides uniform, cross platform browser
 detection, command line argument handling and process launching for `chrome`,

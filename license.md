@@ -1,5 +1,5 @@
 ---
-layout: default
+permalink: license
 ---
 # LICENSE (MIT)
 

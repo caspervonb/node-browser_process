@@ -1,11 +1,7 @@
 ---
-layout: man
+permalink: doc/man/browser_process.find.3
 ---
 # browser_process.find -- search for the executable of a browser
-
-## NAME
-**browser_process.find** -- search for the executable of a browser
-
 ## SYNOPSIS
 
 ```js
@@ -46,6 +42,6 @@ browser.find('firefox', (error, command) => {
 
 ## SEE ALSO
 
-- [browser_process.options](browser_process.options.3.html)
-- [browser_process.spawn](browser_process.spawn.3.html)
-- [browser_process.type](browser_process.type.3.html)
+- [browser_process.options](browser_process.options.3)
+- [browser_process.spawn](browser_process.spawn.3)
+- [browser_process.type](browser_process.type.3)

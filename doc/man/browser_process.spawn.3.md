@@ -1,11 +1,7 @@
 ---
-layout: man
+permalink: doc/man/browser_process.spawn.3
 ---
 # browser_process.spawn -- launch a new browser process
-
-## NAME
-**browser_process.spawn** -- launch a new browser process
-
 ## SYNOPSIS
 
 ```js
@@ -39,17 +35,20 @@ spawn(identifier [, args] [, options], callback)
 
 ## DESCRIPTION
 
-Launches a new browser identified with the given `identifier` which may be either an absolute path to a browser executable, or the name of a browser (`chrome`, `chromium`, `electron` or `firefox`).
+Launches a new browser identified with the given `identifier` which may be
+either an absolute path to a browser executable, or the name of a browser
+(`chrome`, `chromium`, `electron` or `firefox`).
 
-Command line arguments may be passed in `args`,
-if omitted `args` will default to an empty array.
+Command line arguments may be passed in `args`, if omitted `args` will default
+to an empty array.
 
 Options to control the working directory, environment and so forth may be
 specified via the `options` parameter.
 
 Both `args` and `options` are passed as-is to `child_process.spawn`.
 
-The callback is passed two arguments `(error, browser)`, where `browser` is the resulting child process as returned `child_process.spawn`
+The callback is passed two arguments `(error, browser)`, where `browser` is the
+resulting child process as returned `child_process.spawn`
 
 
 ## EXAMPLES
@@ -74,6 +73,6 @@ browser.spawn('chrome', (error, ps) => {
 
 ## SEE ALSO
 
-- [browser_process.find](browser_process.find.3.html)
-- [browser_process.spawn](browser_process.spawn.3.html)
-- [browser_process.type](browser_process.type.3.html)
+- [browser_process.find](browser_process.find.3)
+- [browser_process.spawn](browser_process.spawn.3)
+- [browser_process.type](browser_process.type.3)

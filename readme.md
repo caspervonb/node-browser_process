@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /
 ---
 # node-browser_process
@@ -35,7 +34,7 @@ browser.spawn('chrome', args, (error, ps) => {
 
 ## DOCUMENTATION
 
-[See the documentation](doc/readme.html)
+[See the documentation](doc/)
 
 ## SUPPORT
 
@@ -48,8 +47,8 @@ browser.spawn('chrome', args, (error, ps) => {
 
 ## RELEASES
 
-[See the changelog](changelog.html).
+[See the changelog](changelog).
 
 ## LICENSE
 
-The project is licensed under the [MIT License](license.html).
+The project is licensed under the [MIT License](license).

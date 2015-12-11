@@ -1,11 +1,7 @@
 ---
-layout: man
+permalink: doc/man/browser_process.detect.3
 ---
 # browser_process.detect -- detect available browser executables
-
-## NAME
-**browser_process.detect** -- detect available browser executables
-
 ## SYNOPSIS
 
 ```js
@@ -21,7 +17,8 @@ detect(callback)
 
 Searches default installation directories for browser executables.
 
-The callback is passed a single `(commands)` argument, which is an array of absolute paths to browser executables.
+The callback is passed a single `(commands)` argument, which is an array of
+absolute paths to browser executables.
 
 ## EXAMPLES
 
@@ -37,6 +34,6 @@ browser.detect((commands) => {
 
 ## SEE ALSO
 
-- [browser_process.options](browser_process.options.3.html)
-- [browser_process.spawn](browser_process.spawn.3.html)
-- [browser_process.type](browser_process.type.3.html)
+- [browser_process.options](browser_process.options.3)
+- [browser_process.spawn](browser_process.spawn.3)
+- [browser_process.type](browser_process.type.3)
