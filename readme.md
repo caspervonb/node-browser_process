@@ -47,8 +47,8 @@ browser.spawn('chrome', args, (error, ps) => {
 
 ## RELEASES
 
-[See the changelog](changelog).
+[See the changelog](changelog.html).
 
 ## LICENSE
 
-The project is licensed under the [MIT License](license).
+The project is licensed under the [MIT License](license.html).

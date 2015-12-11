@@ -8,8 +8,8 @@ all: $(DOC)
 	echo permalink: `echo $@ | sed 's/.md$$/.html/g; s/readme$$/\//;'` >> $@
 	echo --- >> $@
 	git show master:$@ | \
-		sed -e 's/\[\(.*\)\](\([^:]*\).md)/[\1](\2)/g;' \
-				-e 's/\[\(.*\)\](\([^:]*\)readme)/[\1](\2)/g;' >> $@
+		sed -e 's/\[\(.*\)\](\([^:]*\).md)/[\1](\2.html)/g;' \
+				-e 's/\[\(.*\)\](\([^:]*\)readme.html)/[\1](\2)/g;' >> $@
 
 clean:
 	rm -f $(DOC)

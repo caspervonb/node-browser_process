@@ -42,6 +42,6 @@ browser.find('firefox', (error, command) => {
 
 ## SEE ALSO
 
-- [browser_process.options](browser_process.options.3)
-- [browser_process.spawn](browser_process.spawn.3)
-- [browser_process.type](browser_process.type.3)
+- [browser_process.options](browser_process.options.3.html)
+- [browser_process.spawn](browser_process.spawn.3.html)
+- [browser_process.type](browser_process.type.3.html)

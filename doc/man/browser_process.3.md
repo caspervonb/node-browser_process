@@ -3,19 +3,19 @@ permalink: doc/man/browser_process.3.html
 ---
 # browser_process -- cross platform browser detection and process creation
 ## METHODS
-[`browser_process.detect`](browser_process.detect.3)
+[`browser_process.detect`](browser_process.detect.3.html)
 :   Detect available browser executables.
 
-[`browser_process.find`](browser_process.find.3)
+[`browser_process.find`](browser_process.find.3.html)
 :   Search for a browser executable.
 
-[`browser_process.options`](browser_process.find.3)
+[`browser_process.options`](browser_process.find.3.html)
 :   Generate browser command line arguments
 
-[`browser_process.spawn`](browser_process.spawn.3)
+[`browser_process.spawn`](browser_process.spawn.3.html)
 :   Launch a new browser process
 
-[`browser_process.type`](browser_process.find.3)
+[`browser_process.type`](browser_process.find.3.html)
 :   Get the type of a browser identifier
 
 # DESCRIPTION
