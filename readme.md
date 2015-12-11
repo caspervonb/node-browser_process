@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: readme.html
 ---
 # node-browser_process
 

@@ -1,5 +1,5 @@
 ---
-permalink: doc/man/browser_process.find.3
+permalink: doc/man/browser_process.find.3.html
 ---
 # browser_process.find -- search for the executable of a browser
 ## SYNOPSIS

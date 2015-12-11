@@ -1,5 +1,5 @@
 ---
-permalink: doc/man/browser_process.type.3
+permalink: doc/man/browser_process.type.3.html
 ---
 # browser_process.type -- get the type of a browser identifier
 ## SYNOPSIS

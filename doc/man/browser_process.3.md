@@ -1,5 +1,5 @@
 ---
-permalink: doc/man/browser_process.3
+permalink: doc/man/browser_process.3.html
 ---
 # browser_process -- cross platform browser detection and process creation
 ## METHODS

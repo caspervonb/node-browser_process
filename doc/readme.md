@@ -1,5 +1,5 @@
 ---
-permalink: doc//
+permalink: doc/readme.html
 ---
 # DOCUMENTATION
 

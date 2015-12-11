@@ -5,7 +5,7 @@ all: $(DOC)
 %.md:
 	mkdir -p $(@D)
 	echo --- > $@
-	echo permalink: `echo $@ | sed 's/.md$$//g; s/readme$$/\//;'` >> $@
+	echo permalink: `echo $@ | sed 's/.md$$/.html/g; s/readme$$/\//;'` >> $@
 	echo --- >> $@
 	git show master:$@ | \
 		sed -e 's/\[\(.*\)\](\([^:]*\).md)/[\1](\2)/g;' \

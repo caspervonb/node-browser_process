@@ -1,5 +1,5 @@
 ---
-permalink: doc/man/browser_process.detect.3
+permalink: doc/man/browser_process.detect.3.html
 ---
 # browser_process.detect -- detect available browser executables
 ## SYNOPSIS

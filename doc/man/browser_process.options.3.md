@@ -1,5 +1,5 @@
 ---
-permalink: doc/man/browser_process.options.3
+permalink: doc/man/browser_process.options.3.html
 ---
 # browser_process.options -- create command line arguments for a browser
 ## SYNOPSIS

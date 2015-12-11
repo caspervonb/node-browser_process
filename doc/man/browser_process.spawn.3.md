@@ -1,5 +1,5 @@
 ---
-permalink: doc/man/browser_process.spawn.3
+permalink: doc/man/browser_process.spawn.3.html
 ---
 # browser_process.spawn -- launch a new browser process
 ## SYNOPSIS
