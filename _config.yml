@@ -1,4 +1,5 @@
 repository: caspervonb/node-browser_process
+google_analytics: 'UA-48351156-6'
 
 markdown: kramdown
 kramdown:

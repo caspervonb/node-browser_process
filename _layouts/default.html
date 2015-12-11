@@ -8,6 +8,16 @@ layout: null
     <meta charset="utf-8">
     <title> {{ page.title }}</title>
     <link rel="stylesheet" href="/style/index.css" media="screen" title="screen" charset="utf-8">
+
+    {% if site.google_analytics %}
+      <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+      <script async src='//www.google-analytics.com/analytics.js'></script>
+    {% endif %}
   </head>
   <body>
     <main class="site-content">
