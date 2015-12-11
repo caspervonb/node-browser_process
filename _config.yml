@@ -7,6 +7,18 @@ kramdown:
   input: GFM
   toc_levels: "2,3"
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: "doc"
+    values:
+      layout: man
+
 gems:
   - jekyll-github-metadata
   - jekyll-sitemap
