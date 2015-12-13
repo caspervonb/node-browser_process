@@ -33,7 +33,7 @@ test(`spawn ${name}`, { skip: name.match(/electron/) }, assert => {
   server.listen();
 });
 
-test(`spawn electron`, { skip: name.match(/electron/) }, assert => {
+test(`spawn electron`, { skip: !name.match(/electron/) }, assert => {
   assert.plan(3);
 
   browser.spawn(name, ['--version'], (error, ps) => {
