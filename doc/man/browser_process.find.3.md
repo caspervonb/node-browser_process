@@ -1,4 +1,5 @@
 # browser_process.find -- search for the executable of a browser
+
 ## SYNOPSIS
 
 ```js

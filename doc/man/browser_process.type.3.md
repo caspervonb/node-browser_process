@@ -1,4 +1,5 @@
 # browser_process.type -- get the type of a browser identifier
+
 ## SYNOPSIS
 
 ```js
@@ -6,6 +7,7 @@ type(identifier)
 ```
 
 ## PARAMETERS
+
 `identifier` *String*
 :   The identifier to use
 
@@ -17,7 +19,7 @@ of a browser (`chrome`, `chromium`, `electron` or `firefox`).
 
 ## RETURN VALUE
 
-*String*
+A *String* containing the browser type.
 
 ## EXAMPLE
 

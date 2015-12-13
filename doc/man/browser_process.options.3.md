@@ -1,4 +1,5 @@
 # browser_process.options -- create command line arguments for a browser
+
 ## SYNOPSIS
 
 ```js
@@ -31,7 +32,7 @@ absolute browser executable path or the name of a browser (`chrome`,
 
 ## RETURN VALUE
 
-*Array*
+An *Array* of command line arguments
 
 ## EXAMPLES
 

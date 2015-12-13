@@ -1,6 +1,7 @@
 # DOCUMENTATION
 
 ## MANUAL
+
 - [`browser_process`](man/browser_process.3.md)
   - [`browser_process.detect`](man/browser_process.detect.3.md)
   - [`browser_process.find`](man/browser_process.find.3.md)

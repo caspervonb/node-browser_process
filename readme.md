@@ -2,13 +2,13 @@
 
 ![Image](https://cloud.githubusercontent.com/assets/157787/7900340/4ee6bb84-0783-11e5-9721-3139492ceba5.png)
 
-Cross platform and uniform browser detection, command line arguments handling and process
-launching of chrome, chromium, electron and firefox for node.js.
+Cross platform and uniform browser detection, command line arguments handling
+and process launching of chrome, chromium, electron and firefox for node.js.
 
 ## INSTALLATION
 
 ```sh
-$ npm install [--save] browser_process
+npm install [--save] browser_process
 ```
 
 ## USAGE
@@ -40,7 +40,6 @@ browser.spawn('chrome', args, (error, ps) => {
 * If you have an idea, submit an [issue](https://github.com/caspervonb/node-browser_process/issues).
 * If you’d like to ask a general question, [issue](https://github.com/caspervonb/node-browser_process/issues).
 * If you want to contribute, submit a [pull request](https://github.com/caspervonb/node-browser_process/pulls).
-
 
 ## RELEASES
 

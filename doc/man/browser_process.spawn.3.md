@@ -1,4 +1,5 @@
 # browser_process.spawn -- launch a new browser process
+
 ## SYNOPSIS
 
 ```js
@@ -46,7 +47,6 @@ Both `args` and `options` are passed as-is to `child_process.spawn`.
 
 The callback is passed two arguments `(error, browser)`, where `browser` is the
 resulting child process as returned `child_process.spawn`
-
 
 ## EXAMPLES
 

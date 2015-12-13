@@ -1,4 +1,5 @@
 # browser_process.detect -- detect available browser executables
+
 ## SYNOPSIS
 
 ```js

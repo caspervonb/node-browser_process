@@ -1,5 +1,7 @@
 # browser_process -- cross platform browser detection and process creation
+
 ## METHODS
+
 [`browser_process.detect`](browser_process.detect.3.md)
 :   Detect available browser executables.
 
@@ -15,7 +17,7 @@
 [`browser_process.type`](browser_process.find.3.md)
 :   Get the type of a browser identifier
 
-# DESCRIPTION
+## DESCRIPTION
 
 The `browser_process` module provides uniform, cross platform browser
 detection, command line argument handling and process launching for `chrome`,
