@@ -1,22 +1,19 @@
-TEST	      						= $(patsubst %.js, run-%.js, $(wildcard test/*.js))
-BROWSER								 ?= chrome chromium electron firefox
+NODE 					?= $(shell which node)
+TEST_BROWSER 	?= chrome chromium electron firefox
 
-test: $(addprefix test-, $(BROWSER))
+test:
+	$(MAKE) test-detect \
+		$(addprefix test-, $(TEST_BROWSER))
 
-test-chrome:
-	@make -k TEST_BROWSER=chrome run-test
+test-chrome test-chromium test-electron test-firefox:
+	$(MAKE) \
+		TEST_BROWSER=$(patsubst test-%,%,$@) \
+		test-find \
+		test-options \
+		test-spawn \
+		test-type \
 
-test-chromium:
-	@make -k TEST_BROWSER=chromium run-test
+test-%: test/%.js
+	$(NODE) $<
 
-test-electron:
-	@make -k TEST_BROWSER=electron run-test
-
-test-firefox:
-	@make -k TEST_BROWSER=firefox run-test
-
-run-test: $(TEST)
-run-test/%.js: test/%.js
-	@node $<
-
-.PHONY: test
+.PHONY: test test-%
