@@ -7,7 +7,7 @@ const http = require('http');
 
 const name = (process.env['TEST_BROWSER'] || 'chrome');
 
-test(`spawn ${name}`, { skip: name.match(/electron/) }, assert => {
+test(`spawn ${name}`, assert => {
   assert.plan(3);
 
   let server = http.createServer();
@@ -38,21 +38,4 @@ test(`spawn ${name}`, { skip: name.match(/electron/) }, assert => {
   });
 
   server.listen();
-});
-
-test(`spawn electron`, { skip: !name.match(/electron/) }, assert => {
-  assert.plan(3);
-
-  browser.spawn(name, ['--version'], (error, ps) => {
-    assert.error(error);
-    assert.ok(ps);
-
-    ps.stdout.once('data', () => {
-      ps.once('close', () => {
-        assert.pass('close');
-      });
-
-      ps.kill();
-    });
-  });
 });
