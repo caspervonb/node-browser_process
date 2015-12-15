@@ -9,7 +9,7 @@ const name = (process.env['TEST_BROWSER'] || 'chrome');
 const type = {
   'chrome': 'chrome',
   'chromium': 'chrome',
-  'electron': 'chrome',
+  'electron': 'electron',
   'firefox': 'firefox',
 }[name];
 
