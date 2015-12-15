@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron-prebuilt": "^0.30.2",
-    "tape": "^4.0.0"
+    "tape": "^4.0.0",
+    "temp": "^0.8.3"
   },
   "dependencies": {
     "which": "^1.1.1"

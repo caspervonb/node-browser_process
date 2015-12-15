@@ -1,6 +1,7 @@
 'use strict';
 
 const browser = require('..');
+const temp = require('temp');
 const test = require('tape');
 const http = require('http');
 
@@ -12,7 +13,13 @@ test(`spawn ${name}`, { skip: name.match(/electron/) }, assert => {
   let server = http.createServer();
   server.once('listening', () => {
     let address = server.address();
-    browser.spawn(name, [`http://localhost:${address.port}`], (error, ps) => {
+
+    let args = browser.options(name, {
+      url: `http://localhost:${address.port}`,
+      profile: temp.path(name),
+    });
+
+    browser.spawn(name, args, (error, ps) => {
       assert.error(error);
       assert.ok(ps);
 
