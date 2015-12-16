@@ -1,4 +1,3 @@
-NODE 					?= $(shell which node)
 TEST_BROWSER 	?= chrome chromium electron firefox
 
 test:
@@ -14,6 +13,6 @@ test-chrome test-chromium test-electron test-firefox:
 		test-type \
 
 test-%: test/%.js
-	$(NODE) $<
+	node $<
 
 .PHONY: test test-%
