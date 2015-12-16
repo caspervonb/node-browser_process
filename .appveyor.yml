@@ -7,6 +7,9 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - npm -g install npm@latest
   - choco install chromium
+  - choco install googlechrome
+  - choco install firefox
+  - choco install make
   - npm install
 
 test_script:
