@@ -1,6 +1,9 @@
 # node-browser_process
 
-![Image](https://cloud.githubusercontent.com/assets/157787/7900340/4ee6bb84-0783-11e5-9721-3139492ceba5.png)
+![](https://cloud.githubusercontent.com/assets/157787/7900340/4ee6bb84-0783-11e5-9721-3139492ceba5.png)
+
+![](https://img.shields.io/travis/caspervonb/node-browser_process.svg?label=unix build)
+![](https://img.shields.io/appveyor/ci/caspervonb/node-browser-process.svg?label=windows build)
 
 Cross platform and uniform browser detection, command line arguments handling
 and process launching of chrome, chromium, electron and firefox for node.js.
