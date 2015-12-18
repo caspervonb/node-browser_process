@@ -16,7 +16,7 @@ test(`spawn ${name}`, assert => {
 
     let args = browser.options(name, {
       url: `http://localhost:${address.port}`,
-      profile: temp.path(name),
+      profile: (name == 'firefox') ? false : temp.path(name),
     });
 
     browser.spawn(name, args, (error, ps) => {
