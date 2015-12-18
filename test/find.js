@@ -14,3 +14,10 @@ test(`find ${name}`, assert => {
     assert.ok(path.isAbsolute(command));
   });
 });
+
+test(`find ${name} synchronously`, assert => {
+  assert.plan(1);
+
+  let command = browser.findSync(name);
+  assert.ok(path.isAbsolute(command));
+});
