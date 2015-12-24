@@ -3,7 +3,7 @@
 const browser = require('..');
 const test = require('tape');
 
-const name = (process.env['TEST_BROWSER'] || 'chrome');
+const name = process.env['TEST_BROWSER'];
 
 test(`chrome options`, { skip: !name.match(/chrome|chromium/) }, assert => {
   const options = {
