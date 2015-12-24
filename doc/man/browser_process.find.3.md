@@ -1,4 +1,4 @@
-# browser_process.find -- search for the executable of a browser
+# browser_process.find -- search for a browser executable
 
 ## SYNOPSIS
 
@@ -9,18 +9,18 @@ find(name, callback)
 ## PARAMETERS
 
 `name` *String*
-:   The name to use.
+:   Specifies the name of a browser to find.
 
 `callback` *Function*
-:   The callback to use.
+:   Specifies the function to call on success or failure.
 
 ## DESCRIPTION
 
-Searches default installation directories for an executable of a browser with
-the given `name` which may be `chrome`, `chromium`, `electron` or `firefox`.
-
-The callback is passed two arguments `(error, command)`, where `command` is
-the absolute real resolved path to the browser executable.
+`find` searches asynchroniously in the known default vendor installation
+directories for an executable of the browser with the specified `name`,
+calling the specified `callback` function with the absolute executable path as
+its second parameter. If an error occurs, the `callback` function is called with
+the error as its first parameter instead.
 
 ## EXAMPLES
 

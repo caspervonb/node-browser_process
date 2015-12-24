@@ -9,7 +9,8 @@ options(identifier, values)
 ## PARAMETERS
 
 `identifier` *String*
-:   The browser identifier to use.
+:   Specifies the identifier of the target browser,
+this may either be the name of a browser or an absolute executable path.
 
 `values` *Object*
 :   `debug` *Integer*

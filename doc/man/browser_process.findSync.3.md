@@ -1,4 +1,4 @@
-# browser_process.find -- search for the executable of a browser synchronously
+# browser_process.findSync -- search for a browser executable synchronously
 
 ## SYNOPSIS
 
@@ -9,12 +9,13 @@ findSync(name)
 ## PARAMETERS
 
 `name` *String*
-:   The name to use.
+:   Specifies the name of a browser to find.
 
 ## DESCRIPTION
 
-Searches default installation directories for an executable of a browser with
-the given `name` which may be `chrome`, `chromium`, `electron` or `firefox`.
+`findSync` searches default installation directories for an browser executable
+with the specified `name` which may be `chrome`, `chromium`, `electron` or
+`firefox`, returning the absolute executable path of that browser.
 
 ## RETURN VALUE
 
