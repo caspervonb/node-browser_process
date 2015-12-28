@@ -4,11 +4,12 @@ const browser = require('..');
 const temp = require('temp');
 const test = require('tape');
 const http = require('http');
+const path = require('path');
 
 const name = (process.env['TEST_BROWSER'] || 'chrome');
 
 test(`spawn ${name}`, assert => {
-  assert.plan(3);
+  assert.plan(5);
 
   let server = http.createServer();
   server.once('listening', () => {
@@ -35,6 +36,14 @@ test(`spawn ${name}`, assert => {
         ps.kill();
       });
     });
+  });
+
+  browser.spawn(path.normalize('/invalid/path'), (error, ps) => {
+    assert.ok(error);
+  });
+
+  browser.spawn('invalid-name', (error, ps) => {
+    assert.ok(error);
   });
 
   server.listen();
