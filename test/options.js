@@ -112,7 +112,7 @@ test(`electron options`, { skip: !name.match(/electron/) }, assert => {
   });
 });
 
-test(`chrome options`, { skip: !name.match(/firefox/) }, assert => {
+test(`firefox options`, { skip: !name.match(/firefox/) }, assert => {
   const options = {
     debug: {
       value: 4000,
