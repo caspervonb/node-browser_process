@@ -24,6 +24,9 @@ test(`spawn ${name}`, assert => {
       assert.error(error);
       assert.ok(ps);
 
+      ps.stdout.pipe(process.stdout);
+      ps.stderr.pipe(process.stderr);
+
       server.once('request', () => {
         ps.once('close', () => {
           server.once('close', () => {
