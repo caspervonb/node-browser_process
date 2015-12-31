@@ -10,8 +10,8 @@ findSync(name)
 
 ## PARAMETERS
 
-`name` *String*
-:   The name to use.
+`name` *String*:  
+    The name to use.
 
 ## DESCRIPTION
 

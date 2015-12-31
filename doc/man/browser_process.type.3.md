@@ -10,8 +10,8 @@ type(identifier)
 
 ## PARAMETERS
 
-`identifier` *String*
-:   The identifier to use
+* `identifier` *String*:  
+    The identifier to use
 
 ## DESCRIPTION
 
