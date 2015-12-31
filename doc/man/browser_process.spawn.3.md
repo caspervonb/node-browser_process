@@ -1,4 +1,6 @@
-# browser_process.spawn -- launch a new browser process
+## NAME
+
+`browser_process.spawn` -- launch a new browser process
 
 ## SYNOPSIS
 

@@ -1,4 +1,6 @@
-# browser_process.find -- search for the executable of a browser
+## NAME
+
+`browser_process.find` -- search for the executable of a browser
 
 ## SYNOPSIS
 
