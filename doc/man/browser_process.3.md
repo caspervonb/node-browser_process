@@ -1,4 +1,6 @@
-# browser_process -- cross platform browser detection and process creation
+## NAME
+
+`browser_process` -- cross platform browser detection and process creation
 
 ## METHODS
 

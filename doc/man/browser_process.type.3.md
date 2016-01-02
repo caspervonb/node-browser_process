@@ -1,4 +1,6 @@
-# browser_process.type -- get the type of a browser identifier
+## NAME
+
+`browser_process.type` -- get the type of a browser identifier
 
 ## SYNOPSIS
 

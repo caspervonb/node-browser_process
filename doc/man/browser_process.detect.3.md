@@ -1,4 +1,6 @@
-# browser_process.detect -- detect available browser executables
+## NAME
+
+`browser_process.detect` -- detect available browser executables
 
 ## SYNOPSIS
 
