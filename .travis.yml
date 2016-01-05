@@ -23,7 +23,10 @@ install:
 
 cache:
   directories:
-    - $(NVM_DIR)
+    # Cache runtimes, compilation is taking up to 20 minutes
+    - ~/.nvm
+    # Cache modules
+    - node_modules
 
 script:
   - node --version
