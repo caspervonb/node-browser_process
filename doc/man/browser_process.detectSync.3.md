@@ -1,4 +1,6 @@
-# browser_process.detectSync -- detect available browser executables synchronously
+## NAME
+
+`browser_process.detectSync` -- detect available browser executables synchronously
 
 ## SYNOPSIS
 

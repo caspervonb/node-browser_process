@@ -1,4 +1,6 @@
-# browser_process.find -- search for the executable of a browser
+## NAME
+
+`browser_process.find` -- search for the executable of a browser
 
 ## SYNOPSIS
 
@@ -8,11 +10,11 @@ find(name, callback)
 
 ## PARAMETERS
 
-`name` *String*
-:   The name to use.
+`name` *String*:  
+    The name to use.
 
-`callback` *Function*
-:   The callback to use.
+`callback` *Function*:  
+    The callback to use.
 
 ## DESCRIPTION
 

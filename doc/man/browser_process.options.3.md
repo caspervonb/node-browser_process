@@ -1,4 +1,6 @@
-# browser_process.options -- create command line arguments for a browser
+## NAME
+
+`browser_process.options` -- create command line arguments for a browser
 
 ## SYNOPSIS
 

@@ -1,4 +1,6 @@
-# browser_process.detect -- detect available browser executables
+## NAME
+
+`browser_process.detect` -- detect available browser executables
 
 ## SYNOPSIS
 
@@ -8,8 +10,8 @@ detect(callback)
 
 ## PARAMETERS
 
-`callback` *Function*
-:   The callback to use.
+* `callback` *Function*:  
+    The callback to use.
 
 ## DESCRIPTION
 

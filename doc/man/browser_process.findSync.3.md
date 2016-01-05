@@ -1,4 +1,6 @@
-# browser_process.find -- search for the executable of a browser synchronously
+## NAME
+
+`browser_process.find` -- search for the executable of a browser synchronously
 
 ## SYNOPSIS
 
@@ -8,8 +10,8 @@ findSync(name)
 
 ## PARAMETERS
 
-`name` *String*
-:   The name to use.
+`name` *String*:  
+    The name to use.
 
 ## DESCRIPTION
 
