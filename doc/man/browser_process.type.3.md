@@ -9,7 +9,8 @@ type(identifier)
 ## PARAMETERS
 
 `identifier` *String*
-:   The identifier to use
+:   Specifies the identifier of the target browser,
+this may either be the name of a browser or an absolute executable path.
 
 ## DESCRIPTION
 

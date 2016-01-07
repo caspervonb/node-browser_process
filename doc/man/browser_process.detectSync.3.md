@@ -1,4 +1,4 @@
-# browser_process.detectSync -- detect available browser executables synchronously
+# browser_process.detectSync -- search for browser executables synchronously
 
 ## SYNOPSIS
 
@@ -8,11 +8,14 @@ detectSync()
 
 ## DESCRIPTION
 
-Searches default installation directories for browser executables.
+`detectSync` searches synchroniously in the known default vendor installation
+directories for browser executables, returning an array of strings containing
+absolute executable paths.
 
 ## RETURN VALUE
 
-An array of strings containing absolute paths to browser executables.
+`detectSync` return an array of strings containing absolute paths to browser
+executables on success.
 
 ## EXAMPLES
 

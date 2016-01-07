@@ -4,7 +4,7 @@ const browser = require('..');
 const test = require('tape');
 const path = require('path');
 
-const name = (process.env['TEST_BROWSER'] || 'chrome');
+const name = process.env['TEST_BROWSER'];
 
 const type = {
   'chrome': 'chrome',

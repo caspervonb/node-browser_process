@@ -6,7 +6,7 @@ const test = require('tape');
 const http = require('http');
 const path = require('path');
 
-const name = (process.env['TEST_BROWSER'] || 'chrome');
+const name = process.env['TEST_BROWSER'];
 
 test(`spawn ${name}`, assert => {
   assert.plan(5);

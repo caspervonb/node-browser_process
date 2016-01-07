@@ -1,4 +1,4 @@
-# browser_process.detect -- detect available browser executables
+# browser_process.detect -- search for browser executables
 
 ## SYNOPSIS
 
@@ -9,14 +9,13 @@ detect(callback)
 ## PARAMETERS
 
 `callback` *Function*
-:   The callback to use.
+:   Specifies the function to call with the resulting executable paths.
 
 ## DESCRIPTION
 
-Searches default installation directories for browser executables.
-
-The callback is passed a single `(commands)` argument, which is an array of
-absolute paths to browser executables.
+`detect` searches asynchroniously in the known default vendor installation
+directories for browser executables, calling the specified `callback` once
+upon completion with an array of strings containing absolute executable paths.
 
 ## EXAMPLES
 
@@ -25,8 +24,8 @@ Detect available browsers
 ```js
 const browser = require('browser_process');
 
-browser.detect((commands) => {
-  console.log('Found %s', commands);
+browser.detect(commands => {
+  console.log('browsers: \n%s', commands.join('\t\n'));
 });
 ```
 
