@@ -8,11 +8,11 @@ find(name, callback)
 
 ## PARAMETERS
 
-`name` *String*
-:   The name to use.
+* `name` *String*:  
+    The name to use.
 
-`callback` *Function*
-:   The callback to use.
+* `callback` *Function*:  
+    The callback to use.
 
 ## DESCRIPTION
 

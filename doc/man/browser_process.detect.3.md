@@ -8,8 +8,8 @@ detect(callback)
 
 ## PARAMETERS
 
-`callback` *Function*
-:   The callback to use.
+* `callback` *Function*:  
+    The callback to use.
 
 ## DESCRIPTION
 

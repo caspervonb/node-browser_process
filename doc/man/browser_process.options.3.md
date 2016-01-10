@@ -8,20 +8,24 @@ options(identifier, values)
 
 ## PARAMETERS
 
-`identifier` *String*
-:   The browser identifier to use.
+* `identifier` *String*:  
+    The browser identifier to use.
 
-`values` *Object*
-:   `debug` *Integer*
-    :   Start with the debugger listening on the given port
-:   `private` *Boolean*
-    :   Open in private browsing mode.
-:   `profile` *Integer*
-    :   Start with the profile with the given path
-:   `url` *String*
-    :   Open URL in a new tab or window
-:   `window` *Boolean*
-    :   Open in a new window
+* `values` *Object*:  
+    * `debug` *Integer*:  
+        Start with the debugger listening on the given port
+
+    * `private` *Boolean*:  
+        Open in private browsing mode.
+
+    * `profile` *Integer*:  
+        Start with the profile with the given path
+
+    * `url` *String*:  
+        Open URL in a new tab or window
+
+    * `window` *Boolean*:  
+        Open in a new window
 
 ## DESCRIPTION
 
